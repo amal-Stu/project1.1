@@ -1,0 +1,32 @@
+<!-- master.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1> Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'main' %}">Back to Home</a></li>
+                <li><a href="{% url 'users' %}">Click to view Users</a></li>
+                <li><a href="{% url 'blogs' %}">Click to view Blogs</a></li>
+                <li><a href="{% url 'comments' %}">Click to view Comments</a></li>
+                <li><a href="{% url 'categories' %}">Click to view Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 BlogWebsite. All rights reserved.</p>
+    </footer>
+</body>
+</html>

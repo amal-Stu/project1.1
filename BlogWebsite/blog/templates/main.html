@@ -1,0 +1,18 @@
+<!-- main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>My Blog</h1>
+    <ul>
+        <li><a href="{% url 'users' %}">Click to view Users</a></li>
+        <li><a href="{% url 'blogs' %}">Click to view Blogs</a></li>
+        <li><a href="{% url 'comments' %}">Click to view Comments</a></li>
+        <li><a href="{% url 'categories' %}">Click to view Categories</a></li>
+    </ul>
+</body>
+</html>
